@@ -15,6 +15,10 @@ class ApplicationController < Sinatra::Base
     erb :quiz
   end
   
+  get '/contact' do
+    erb :contact
+  end
+  
   post '/result' do
     answers = []
     answers << params.values 
