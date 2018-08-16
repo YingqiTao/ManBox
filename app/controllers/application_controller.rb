@@ -19,6 +19,10 @@ class ApplicationController < Sinatra::Base
     erb :contact
   end
   
+  get '/about' do
+    erb :about
+  end
+  
   post '/result' do
     answers = []
     answers << params.values 
