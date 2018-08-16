@@ -1,0 +1,64 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/4f/6d/05/4f6d052bb1b26150115888ea06d4c106.jpg");
+}
+}
+p {margin-bottom: 1em;}
+.clearfix:after {
+content: "";
+display: table;
+  
+}
+.nav-wrapper {
+   width:100%;
+}
+ 
+.nav-menu {
+   position:relative;
+   display:inline-block;
+}
+ 
+.nav-menu li {
+   display: inline;
+   list-style-type: none;
+}
+ 
+.sub-menu {
+   position:absolute;
+   display:none;
+   background: #ccc;
+}
+.nav-menu ul li:hover > ul {
+   display:inline-block;
+}
+.nav-menu > ul > li:after {
+   content: "\25BC"; /*escaped unicode for the down arrow*/
+   font-size: .5em;
+   display: inline;
+   position: relative;
+   }
+1px solid red
+    
+body {
+    background-image: url("http://www.designbolts.com/wp-content/uploads/2012/11/Free-Stressed-linen-patterns.jpg");
+}
+input[type='radio']:checked:after{
+       font-family:courier;
+        color:white;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+.pr{
+ font-size:20px;
+ font-family:courier;
+  text-align:center;
+  color:white
+}

@@ -29,3 +29,4 @@ class ApplicationController < Sinatra::Base
     erb :result
   end 
 end
+end
