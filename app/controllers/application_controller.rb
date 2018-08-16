@@ -14,4 +14,8 @@ class ApplicationController < Sinatra::Base
   get '/quiz' do
     erb :quiz
   end
+  
+  post '/result' do
+    erb :result
+  end 
 end
