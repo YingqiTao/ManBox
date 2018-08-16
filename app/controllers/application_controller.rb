@@ -16,6 +16,12 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
+    answers = []
+    answers << params.values 
+    display = []
+    answers.each do |integer|
+      item = get_item(integer)
+      display << item
     erb :result
   end 
 end
