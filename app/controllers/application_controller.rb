@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
     return erb :index
   end
   
-  post '/quiz' do
+  get '/quiz' do
     erb :quiz
   end
   
