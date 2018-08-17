@@ -9,7 +9,7 @@
          <ul class="sub-menu"> 
          </ul> 
          </li>
-         <li><a href="#!">About us</a>
+         <li><a href="/about">About us</a>
          <ul class="sub-menu"> 
             
             
@@ -50,27 +50,26 @@ img.a {
       <p style="font-size:30px;font-family:courier;text-align:center;color:white"> What's your name? <input type="text" name="name"></p>
       
       <p style="font-size:30px;font-family:courier;color:white">For whom are you shopping? </p>
-      <input type="radio" name="I am shopping for my" value= "0" /><label class="pr"> Lover<br /> 
-      <input type="radio" name="I am shopping for my" value= "1" /> Male family members<br />
-      <input type="radio" name="I am shopping for my" value= "2" /> Male colleagues<br />
-      <input type="radio" name="I am shopping for my" value= "3" /> Male friends<br />
+      <input type="radio" name="I am shopping for my" value= "5" /><label class="pr"> Lover<br /> 
+      <input type="radio" name="I am shopping for my" value= "10" /> Male family members<br />
+      <input type="radio" name="I am shopping for my" value= "10" /> Male colleagues<br />
+      <input type="radio" name="I am shopping for my" value= "10" /> Male friends<br />
       
       <p style="font-size:30px;font-family:courier;color:white">How old is the gift receiver? </p>
-      <input type="radio" name="He is " value= "4" /> 18 and under<br /> 
-      <input type="radio" name="He is " value= "5" /> 19-30<br />
-      <input type="radio" name="He is " value= "6" /> 31-40<br />
-      <input type="radio" name="He is " value= "7" /> 41 and above<br />
+      <input type="radio" name="He is " value= "3" /> 18 and under<br /> 
+      <input type="radio" name="He is " value= "3" /> 19-30<br />
+      <input type="radio" name="He is " value= "4" /> 30 and above<br />
       
       <p style="font-size:30px;font-family:courier;color:white">In what occasion are you shopping? </p>
-      <input type="radio" name="The occasion is " value= "8" /> Birthday<br /> 
-      <input type="radio" name="The occasion is " value= "9" /> Anniversary<br />
-      <input type="radio" name="The occasion is " value= "10" /> Valentine’s day<br />
-      <input type="radio" name="The occasion is " value= "11" /> Holidays (ex. Christmas, father’s day)<br />
+      <input type="radio" name="The occasion is " value= "0" /> Birthday<br /> 
+      <input type="radio" name="The occasion is " value= "0" /> Anniversary<br />
+      <input type="radio" name="The occasion is " value= "0" /> Valentine’s day<br />
+      <input type="radio" name="The occasion is " value= "0" /> Holidays (ex. Christmas, father’s day)<br />
       
       <p style="font-size:30px;font-family:courier;color:white">What is the price range you are looking for? </p>
-      <input type="radio" name="My price range is " value= "12" /> $20-50<br /> 
-      <input type="radio" name="My price range is " value= "13" /> $50-200<br />
-      <input type="radio" name="My price range is " value= "14" /> $200 and above<br />
+      <input type="radio" name="My price range is " value= "0" /> $20-50<br /> 
+      <input type="radio" name="My price range is " value= "0" /> $50-200<br />
+      <input type="radio" name="My price range is " value= "0" /> $200 and above<br />
   </label>  </form>
      <style>
 .button {
@@ -94,7 +93,9 @@ img.a {
 }
 </style>
   <body>
-    <button class="button">Submit</button>
+    <!--<button class="button">Submit</button>-->
+    <form action="/result">
+    <input type="submit" class = "button" value="Submit" />
    
   </body>
 </html>

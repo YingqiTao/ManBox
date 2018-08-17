@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
     return erb :index
   end
   
-  post '/quiz' do
+  get '/quiz' do
     erb :quiz
   end
   
@@ -23,14 +23,23 @@ class ApplicationController < Sinatra::Base
     erb :about
   end
   
-  post '/result' do
-    answers = []
-    answers << params.values 
-    display = []
-    answers.each do |integer|
-      item = get_item(integer)
-      display << item
-    erb :result
-  end 
-end
+  sum = 0 
+  answers = []
+  answers << params.values
+  answers.each do |integer|
+    sum += integer
+  end
+  return sum
+  
+  if sum == 9
+  get '/result1' do
+    # sum = 0 
+    # answers = []
+    # answers << params.values 
+    # display = []
+    # answers.each do |integer|
+    #   sum += integer
+    #    display << item
+    erb :result1
+  end
 end
