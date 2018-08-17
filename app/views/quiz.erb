@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <div class="nav-wrapper">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  
+<div class="nav-wrapper">
    <nav class="nav-menu">
       <ul class="clearfix">
          <li><a href="/">Home</a></li>
@@ -9,7 +12,7 @@
          <ul class="sub-menu"> 
          </ul> 
          </li>
-         <li><a href="/about">About us</a>
+         <li><a href="#!">About us</a>
          <ul class="sub-menu"> 
             
             
@@ -23,90 +26,76 @@ a:link, a:visited {.w3-btn,.w3-button{border:none;display:inline-block;padding:8
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:black!important}
 .w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
     background-color: grey;
-    color: white;
+    color: black;
   font-size:25px;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  font-family:courier
+  font-family: 'Montserrat',sans-serif;
  
 }
 a:hover, a:active {
-    background-color: black;
-}style
+    background-color: #ea5e00;
+}
+    style
 img.a {
     vertical-align: baseline;
 }
 </style>
-    <p style="font-size:80px;font-family:courier;text-align:center;color:white"> <img class="a" src="http://images.clipartpanda.com/box-clipart-4i9Eae76T.png" width="60" height="56"> The Man Box <img class="a" src="http://images.clipartpanda.com/box-clipart-4i9Eae76T.png" width="60" height="56"></p>
-    <meta charset="UTF-8">
+   <div class="logo"><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.15752-0/s261x260/39442152_1925782460814512_4377206681243746304_n.png?_nc_cat=0&oh=22ccfe91d4331811d4b8ab6fbc0b9dd3&oe=5C11588A" height="200"></div>
+   <meta charset="UTF-8">
     <title>What's in your ManBox?</title>
-    <link rel="stylesheet" type="text/css" href="css/quiz_style.css">
     </head>
   <body>
     <!-- Insert Your Form Below -->
-    <form method="POST" action="/result" id="form1">
-      <p style="font-size:30px;font-family:courier;text-align:center;color:white"> What's your name? <input type="text" name="name"></p>
+    <form method="POST" action="/result">
+      <p style="font-size:30px;font-family:courier;text-align:center;color:black"> What's your name? <input type="text" name="name"></p>
       
-      <p style="font-size:30px;font-family:courier;color:white">For whom are you shopping? </p>
-      <input type="radio" name="I am shopping for my" value= "5" /><label class="pr"> Lover<br /> 
-      <input type="radio" name="I am shopping for my" value= "10" /> Male family members<br />
-      <input type="radio" name="I am shopping for my" value= "10" /> Male colleagues<br />
-      <input type="radio" name="I am shopping for my" value= "10" /> Male friends<br />
+      <p style="font-size:30px;color:black;font-family:courier;text-align:center;">For whom are you shopping? </p>
+      <input type="radio" name="I am shopping for my" value=5> Lover<br /> 
+      <input type="radio" name="I am shopping for my" value=10> Male family members<br />
+      <input type="radio" name="I am shopping for my" value=10> Male colleagues<br />
+      <input type="radio" name="I am shopping for my" value=10> Male friends<br>
       
-      <p style="font-size:30px;font-family:courier;color:white">How old is the gift receiver? </p>
-      <input type="radio" name="He is " value= "3" /> 18 and under<br /> 
-      <input type="radio" name="He is " value= "3" /> 19-30<br />
-      <input type="radio" name="He is " value= "4" /> 30 and above<br />
+      <p style="font-size:30px;font-family:courier;color:black">How old is the gift receiver? </p>
+      <input type="radio" name="He is " value=3> 18 and under<br /> 
+      <input type="radio" name="He is " value=3> 19-30<br />
+      <input type="radio" name="He is " value=4> 30 and above<br />
+
       
-      <p style="font-size:30px;font-family:courier;color:white">In what occasion are you shopping? </p>
-      <input type="radio" name="The occasion is " value= "0" /> Birthday<br /> 
-      <input type="radio" name="The occasion is " value= "0" /> Anniversary<br />
-      <input type="radio" name="The occasion is " value= "0" /> Valentine’s day<br />
-      <input type="radio" name="The occasion is " value= "0" /> Holidays (ex. Christmas, father’s day)<br />
+      <p style="font-size:30px;font-family:courier;color:black">In what occasion are you shopping? </p>
+      <input type="radio" name="The occasion is " value=0> Birthday<br /> 
+      <input type="radio" name="The occasion is " value=0> Anniversary<br />
+      <input type="radio" name="The occasion is " value=0> Valentine’s day<br />
+      <input type="radio" name="The occasion is " value=0> Holidays (ex. Christmas, father’s day)<br />
+
       
-      <p style="font-size:30px;font-family:courier;color:white">What is the price range you are looking for? </p>
-      <input type="radio" name="My price range is " value= "0" /> $20-50<br /> 
-      <input type="radio" name="My price range is " value= "0" /> $50-200<br />
-      <input type="radio" name="My price range is " value= "0" /> $200 and above<br />
-  </label>
+      <p style="font-size:30px;font-family:courier;color:black">What is the price range you are looking for? </p>
+      <input type="radio" name="My price range is " value=0> $20-50<br /> 
+      <input type="radio" name="My price range is " value=0> $50-200<br />
+      <input type="radio" name="My price range is " value=0> $200 and above<br/>
+    <input type="submit" value="Submit">
+     
+  </label>  
   </form>
      <style>
-.button {
-    background-color: grey;
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+       .button {   
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  cursor: pointer;
   margin:0 auto;
-    margin-right:650px;
-    float:right;
-  font-style: oblique;
-  color:white;
+  margin-right:650px;
+  float:right;
+  font-family:'Montserrat',sans-serif;
   text-align:center;
-  font-size:25px
+  font-size:30px
 }
-.button:hover {
-    background-color: black;
-}
+button:hover, button:active {
+  background-color:  #ea5e00;}
+    
 </style>
-  <body>
-    <!--<button class="button">Submit</button>-->
-    <form action="/result">
-    <input type="submit" class = "button" value="Submit" />
-   
-   <script>
-document.getElementById("form1").onsubmit=function() {
-       receiver = parseInt(document.querySelector('input[name = "I am shopping for my"]:checked').value);
-	   age = parseInt(document.querySelector('input[name = "He is "]:checked').value);
-	   occasion = parseInt(document.querySelector('input[name = "The occasion is "]:checked').value);
-	   price = parseInt(document.querySelector('input[name = "My price range is "]:checked').value);
-	   
-	   sum = receiver + age + occasion + price}
-	   </script>
-	   
-  </body>
+<body>
+</body>
 </html>
