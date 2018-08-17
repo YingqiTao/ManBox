@@ -46,7 +46,7 @@ img.a {
     </head>
   <body>
     <!-- Insert Your Form Below -->
-    <form method="POST" action="/result">
+    <form method="POST" action="/result" id="form1">
       <p style="font-size:30px;font-family:courier;text-align:center;color:white"> What's your name? <input type="text" name="name"></p>
       
       <p style="font-size:30px;font-family:courier;color:white">For whom are you shopping? </p>
@@ -70,7 +70,8 @@ img.a {
       <input type="radio" name="My price range is " value= "0" /> $20-50<br /> 
       <input type="radio" name="My price range is " value= "0" /> $50-200<br />
       <input type="radio" name="My price range is " value= "0" /> $200 and above<br />
-  </label>  </form>
+  </label>
+  </form>
      <style>
 .button {
     background-color: grey;
@@ -97,5 +98,15 @@ img.a {
     <form action="/result">
     <input type="submit" class = "button" value="Submit" />
    
+   <script>
+document.getElementById("form1").onsubmit=function() {
+       receiver = parseInt(document.querySelector('input[name = "I am shopping for my"]:checked').value);
+	   age = parseInt(document.querySelector('input[name = "He is "]:checked').value);
+	   occasion = parseInt(document.querySelector('input[name = "The occasion is "]:checked').value);
+	   price = parseInt(document.querySelector('input[name = "My price range is "]:checked').value);
+	   
+	   sum = receiver + age + occasion + price}
+	   </script>
+	   
   </body>
 </html>

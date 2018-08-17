@@ -23,23 +23,7 @@ class ApplicationController < Sinatra::Base
     erb :about
   end
   
-  sum = 0 
-  answers = []
-  answers << params.values
-  answers.each do |integer|
-    sum += integer
-  end
-  return sum
-  
-  if sum == 9
-  get '/result1' do
-    # sum = 0 
-    # answers = []
-    # answers << params.values 
-    # display = []
-    # answers.each do |integer|
-    #   sum += integer
-    #    display << item
-    erb :result1
+  get '/result' do
+    erb :result_lover_above
   end
 end
